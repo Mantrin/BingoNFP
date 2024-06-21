@@ -1,0 +1,89 @@
+body { font-family: sans-serif; }
+
+.scene {
+	display: inline-block;
+	width: 15em;
+	height: 15em;
+	margin: 0.5em;
+	perspective: 15em;
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transform-style: preserve-3d;
+	transform-origin: center right;
+	transition: transform 1s;
+}
+
+.card.is-flipped {
+	transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-weight: bold;
+	backface-visibility: hidden;
+	text-align: justify;
+	}
+
+.card__face--front {
+	background: crimson;
+	font-size: 1.5em;
+	text-align: center;
+	display: flex;
+    align-items: center;
+	text-wrap: balance;
+}
+
+.card__face--back {
+	transform: rotateY(180deg);
+	display: inline-block;
+	background: DarkMagenta ;
+	font-size: 0.8em;
+	font-weight: bold;
+	align-items: justify;
+	text-justify: distribute;
+}
+
+.title {
+	color: crimson;
+	font-weight: bolder; 
+	text-transform: uppercase;
+}
+
+.howtouse {
+	color: rgb(149, 26, 129);
+	font-weight: bolder;
+	margin-left: 1em;
+}
+
+.sourcesShowHide {
+	cursor: pointer;
+	color: rgb(149, 26, 129);
+	font-weight: bold;
+}
+
+li {
+	color: rgb(149, 26, 129);
+}
+
+.footer{
+	color: grey;
+	font-size: 0.7em;
+}
+
+.inboxtext--back {
+	margin: 1.5em;
+}
+
+
+
+
+
+
