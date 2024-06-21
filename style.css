@@ -14,6 +14,10 @@ body {
 	background-color: #F8F0D1;
 }
 
+p {
+	font-size: 1em;
+}
+
 p > b {
 	font-weight: 500;
 }
@@ -33,9 +37,8 @@ p > b {
 
 .scene {
 	display: inline-block;
-	width: 15em;
-	height: 15em;
-	margin: 0.5em;
+	width: 19em;
+	height: 19em;
 	perspective: 15em;
 }
 
@@ -81,7 +84,6 @@ p > b {
 	transform: rotateY(180deg);
 	display: inline-block;
 	background: #9A36E0 ;
-	font-size: 0.9em;
 	font-weight: 200;
 	align-items: justify;
 	justify-content: center;
@@ -116,18 +118,23 @@ p > b {
 	cursor: pointer;
 	color: #9A36E0;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.5em;
+	padding-bottom: 2em;
 }
 
 ul {
+	padding-right: 1.5em;
 	padding-bottom: 1.5em;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2em;
 }
 
 li {
 	color: #9A36E0;
 	display: flex;
 	align-items: center;
-	column-gap: 0.5em;
+	column-gap: 1em;
 }
 
 li > a {
@@ -137,6 +144,7 @@ li > a {
 
 li > p {
 	margin: 0.2em;
+	flex: 1;
 }
 
 .footer{
