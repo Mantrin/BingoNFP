@@ -1,4 +1,35 @@
-body { font-family: sans-serif; }
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	font-family: "Barlow";
+	background-color: #F8F0D1;
+}
+
+p > b {
+	font-weight: 500;
+}
+
+#container-card {
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 2em;
+	row-gap: 2em;
+	justify-content: center;
+	align-items: flex-start;
+	margin: auto;
+	padding: 2em;
+}
 
 .scene {
 	display: inline-block;
@@ -29,53 +60,101 @@ body { font-family: sans-serif; }
 	color: white;
 	font-weight: bold;
 	backface-visibility: hidden;
-	text-align: justify;
+	/* text-align: justify; */
 	}
 
 .card__face--front {
-	background: crimson;
+	background: #FF4A52;
 	font-size: 1.5em;
 	text-align: center;
+	align-items: center;
 	display: flex;
-    align-items: center;
-	text-wrap: balance;
+	flex-wrap: wrap;
+}
+
+.card__face--front > p {
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 .card__face--back {
 	transform: rotateY(180deg);
 	display: inline-block;
-	background: DarkMagenta ;
-	font-size: 0.8em;
-	font-weight: bold;
+	background: #9A36E0 ;
+	font-size: 0.9em;
+	font-weight: 200;
 	align-items: justify;
-	text-justify: distribute;
+	justify-content: center;
+	display: flex;
 }
 
-.title {
-	color: crimson;
-	font-weight: bolder; 
+#title {
+	color: #FF4A52;
+	font-weight: 800; 
 	text-transform: uppercase;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	column-gap: 1em;
 }
 
-.howtouse {
-	color: rgb(149, 26, 129);
+#title > img {
+	height: 4em;
+	width: auto;
+}
+
+#howtouse {
+	color: #9A36E0;
 	font-weight: bolder;
-	margin-left: 1em;
+	width: fit-content;
+	margin: auto;
 }
 
 .sourcesShowHide {
 	cursor: pointer;
-	color: rgb(149, 26, 129);
+	color: #9A36E0;
 	font-weight: bold;
+	font-size: 2em;
+}
+
+ul {
+	padding-bottom: 1.5em;
 }
 
 li {
-	color: rgb(149, 26, 129);
+	color: #9A36E0;
+	display: flex;
+	align-items: center;
+	column-gap: 0.5em;
+}
+
+li > a {
+	color: #E6255B;
+	font-weight: 700;
+}
+
+li > p {
+	margin: 0.2em;
 }
 
 .footer{
-	color: grey;
+	color: #1D1D1B;
 	font-size: 0.7em;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #F8F0D1;
+}
+
+.footer > p {
+	width: fit-content;
+	margin: auto;
 }
 
 .inboxtext--back {
@@ -87,6 +166,10 @@ li {
 	font-weight: bolder;
 }
 
+summary {
+	width: fit-content;
+	margin: auto;
+}
 
 
 
