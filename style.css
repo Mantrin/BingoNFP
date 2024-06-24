@@ -167,6 +167,7 @@ li > p {
 
 .inboxtext--back {
 	margin: 1.5em;
+	overflow-x: scroll;
 }
 
 .aInBox {
@@ -179,7 +180,46 @@ summary {
 	margin: auto;
 }
 
+@media screen and (max-width: 800px) {
+	#title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
+	#title > h1 {
+		text-align: center;
+	}
 
+	#howtouse {
+		max-width: 80vw;
+	}
 
+	p {
+		font-size: 2em ;
+	}
 
+	.inboxtext--back {
+		font-size: 2em;
+	}
+
+	.scene {
+		width: 30em;
+		height: 30em;
+	}
+
+	footer > p {
+		font-weight: 100;
+		font-size: 0.8em;
+	}
+
+	#container-card {
+		margin: 0;
+		padding: 0;
+	}
+
+	ul > li > p {
+		font-size: 1em;
+	}
+}
