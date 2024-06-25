@@ -100,6 +100,7 @@ p > b {
 	align-items: center;
 	font-size: 2em;
 	column-gap: 1em;
+	padding: 0 2em 0 2em;
 }
 
 #title > img {
@@ -112,6 +113,7 @@ p > b {
 	font-weight: bolder;
 	width: fit-content;
 	margin: auto;
+	padding: 0 2em 0 2em;
 }
 
 .sourcesShowHide {
@@ -180,7 +182,7 @@ summary {
 	margin: auto;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	#title {
 		display: flex;
 		flex-direction: column;
@@ -221,5 +223,53 @@ summary {
 
 	ul > li > p {
 		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#title > h1 {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: 1.2em ;
+	}
+
+	.inboxtext--back {
+		font-size: 1.2em;
+	}
+
+	.scene {
+		width: 20em;
+		height: 20em;
+	}
+
+	footer > p {
+		width: 70% !important;
+		align-self: center;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#title > h1 {
+		font-size: 1em;
+	}
+
+	p {
+		font-size: 1.1em ;
+	}
+
+	#howtouse {
+		font-size: 0.9em;
+	}
+
+	.inboxtext--back {
+		font-size: 1.1em;
+	}
+
+	.scene {
+		width: 15em;
+		height: 15em;
 	}
 }
